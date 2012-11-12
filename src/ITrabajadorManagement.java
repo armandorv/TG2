@@ -16,13 +16,20 @@ public interface ITrabajadorManagement {
     void setHorasTrabajadas(int cod, int horast);
     void setVentas(int cod, double vent);
     void setFechaNacimiento(int cod, java.util.Date fecha);
+    
+    void setIHSS(int codigo, int IHSS);
+    void setTipo(int codigo, String TipoJerarquia);
+    String Trabajadorlongevo();
+            
     /*
      * TODO:
      * Agregar :
      * - Funcion para asignar el IHSS segun un codigo, y un valor
      * entero
+     * 
      * - Funcion para asignar el Tipo de Jerarquia a un empleado segun
      * su codigo
+     * 
      * - Trabajador longevo() = Funcion que me debera retornar
      *  un objeto trabajador el cual es el empleado con mas
      * edad dentro de la empresa (OJO NO QUIEN TIENE MAS TIEMPO

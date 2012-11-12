@@ -103,22 +103,21 @@ public class Main {
     }
 
     private static void submenu() {
+        System.out.println("1- Registrar Horas Trabajadas");
+        System.out.println("2- Registrar Venta");
+        System.out.println("3- Actualizar Fecha de Nacimiento");
+        System.out.println("4- Actualizar Numero de IHSS");
+        System.out.println("5- Actualizar Tipo Jerarquia");
+        System.out.println("6- Regresar Menu Principal");
+        
         /*
-         * Este sub menu tiene las opciones de:
-         * 1- Registrar Horas Trabajadas
-         * 2- Registrar Venta
-         * 3- Actualizar Fecha de Nacimiento
-         * 4- Actualizar Numero de IHSS
-         * 5- Actualizar Tipo Jerarquia
-         * 6- Regresar Menu Principal
-         * 
          * Y luego segun cada opcion se pide el codigo del
          * trabajador y su dato extra segun la opcion.
          * Una vez que se completa la accion se regresa a 
          * este sub menu. SOLO se regresa a este menu si
          * se selecciona la opcion 5.
          */
-        throw new UnsupportedOperationException("Not yet implemented");
+        
     }
     
     
