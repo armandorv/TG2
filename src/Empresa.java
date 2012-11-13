@@ -49,6 +49,7 @@ public class Empresa implements ITrabajadorManagement{
 
     @Override
     public double pagarATrabajador(int cod) {
+        
         /*
          * TODO: Buscar dentro de la coleccion el empleado que
          * tenga el codigo que recibe de parametro. Y si se
@@ -60,6 +61,7 @@ public class Empresa implements ITrabajadorManagement{
 
     @Override
     public void setHorasTrabajadas(int cod, int horast) {
+        
         /*
          * TODO: Busca un empleado dentro de la coleccion con ese
          * codigo que recibe de parametro. Si se encuentra se valida
@@ -84,6 +86,21 @@ public class Empresa implements ITrabajadorManagement{
          * TODO: Busca el empleado. Y si existe se le actualiza
          * su fecha de nacimiento.
          */
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    @Override
+    public void setIHSS(int cod, int IHSS) {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    @Override
+    public void setTipo(int cod, String tipo) {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    @Override
+    public String Trabajadorlongevo() {
         throw new UnsupportedOperationException("Not supported yet.");
     }
     

@@ -16,9 +16,8 @@ public interface ITrabajadorManagement {
     void setHorasTrabajadas(int cod, int horast);
     void setVentas(int cod, double vent);
     void setFechaNacimiento(int cod, java.util.Date fecha);
-    
-    void setIHSS(int codigo, int IHSS);
-    void setTipo(int codigo, String TipoJerarquia);
+    void setIHSS(int cod, int IHSS);
+    void setTipo(int cod, String tipo);
     String Trabajadorlongevo();
             
     /*

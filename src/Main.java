@@ -3,9 +3,7 @@
  * and open the template in the editor.
  */
 package Herencia.H645;
-
 import java.util.Calendar;
-import java.util.Random;
 import java.util.Scanner;
 
 /**
@@ -101,15 +99,34 @@ public class Main {
          */
         throw new UnsupportedOperationException("Not yet implemented");
     }
-
-    private static void submenu() {
+        
+    private static void submenu(int cod, int horast) {
+        int opcion;
+        do{
         System.out.println("1- Registrar Horas Trabajadas");
         System.out.println("2- Registrar Venta");
         System.out.println("3- Actualizar Fecha de Nacimiento");
         System.out.println("4- Actualizar Numero de IHSS");
         System.out.println("5- Actualizar Tipo Jerarquia");
         System.out.println("6- Regresar Menu Principal");
+        opcion=lea.nextInt();
         
+        switch(opcion){
+            
+            case 1:
+                empresa.setHorasTrabajadas(cod, horast);
+            case 2:
+                empresa.setVentas(cod, ventas);
+            case 3:
+                empresa.setFechaNacimiento(cod, fecha);
+            case 4:
+                empresa.setIHSS(cod, IHSS);
+            case 5:
+                empresa.setTipo(cod,tipo);
+                
+              
+                
+        }
         /*
          * Y luego segun cada opcion se pide el codigo del
          * trabajador y su dato extra segun la opcion.
@@ -117,7 +134,7 @@ public class Main {
          * este sub menu. SOLO se regresa a este menu si
          * se selecciona la opcion 5.
          */
-        
+        }while(opcion!=6);
     }
     
     
